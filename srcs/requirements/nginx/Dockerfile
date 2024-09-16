@@ -10,6 +10,8 @@ RUN mkdir -p /var/www/html
 
 COPY ./config/index.html /var/www/html/index.html
 
+EXPOSE 443
+
 CMD ["-g", "daemon off;"]
 
 ENTRYPOINT [ "nginx" ]

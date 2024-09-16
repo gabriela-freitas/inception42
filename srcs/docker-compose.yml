@@ -1,8 +1,10 @@
 services:
   nginx:
+    image: nginx:user
     container_name: nginx
     build:
       context: ./requirements/nginx
       dockerfile: Dockerfile
     ports:
-      - "80:80" 
+      - "80:80"
+    restart: always
