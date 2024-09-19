@@ -4,7 +4,7 @@ version: "3.8"
 services:
 #mariadb
   mariadb:
-    image: mariadb:user
+    image: mariadb:gafreita
     container_name: mariadb
     build: ./requirements/mariadb
     volumes:
@@ -16,7 +16,7 @@ services:
     restart: always
 #nginx
   nginx:
-    image: nginx:user
+    image: nginx:gafreita
     container_name: nginx
     build: ./requirements/nginx
     ports:
@@ -30,7 +30,7 @@ services:
     restart: always
 #wordpress
   wordpress:
-    image: wordpress:user
+    image: wordpress:gafreita
     container_name: wordpress
     build: ./requirements/wordpress
     depends_on:
