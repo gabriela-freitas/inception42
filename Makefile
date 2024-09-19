@@ -1,5 +1,5 @@
-WP_DATA = /home/data/wordpress #define the path to the wordpress data
-DB_DATA = /home/data/mariadb #define the path to the mariadb data
+WP_DATA = $(HOME)/data/wordpress #define the path to the wordpress data
+DB_DATA = $(HOME)/data/mariadb #define the path to the mariadb data
 
 DOCKER_COMPOSE_PATH = ./srcs/docker-compose.yml
 
